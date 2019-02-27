@@ -1,0 +1,16 @@
+body{
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    background-color: hotpink;
+}
+nav{
+    background-color: rgb(29, 29, 29);
+    padding: 1rem 0;
+    color: white;
+    text-align: center;
+}
+h2{
+    color: white;
+}
+li{
+    list-style: none;
+}

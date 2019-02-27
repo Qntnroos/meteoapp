@@ -1,0 +1,22 @@
+{% extends 'base.html.twig' %}
+{% block  date %}
+    <h2>Current time: {{ local }}</h2>
+{% endblock %}
+{% block daily_avg %}
+    <ul class="list-group">
+        <li class="list-group-item list-group-item-danger">{{ intro|raw }}</li>
+        <li class="list-group-item">min t°: {{ meting[1].min }} °C</li>
+        <li class="list-group-item">max t°: {{ meting[1].max }} °C</li>
+        <li class="list-group-item">avg t°: {{ meting[1].average }} °C</li>
+    </ul>
+{% endblock %}
+
+{% block current %}
+    <ul class="list-group">
+    </ul>    
+{% endblock %}
+{% block temp %}<li class="list-group-item">t°: {{ meting[0].temperature }} °C</li>{% endblock %}
+{% block situation %}<li class="list-group-item">Humidity: {{ meting[0].humidity }}</li>{% endblock %}
+{% block rain %}<li class="list-group-item">Rainfall: {{ meting[0].rain_day }} mm/m<sup>2</sup></li>{% endblock %}
+{% block wind %}<li class="list-group-item">Windspeed:{{meting[0].wind_speed}} m/s</li>{% endblock %}
+    
